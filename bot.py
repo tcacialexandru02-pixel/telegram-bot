@@ -9,7 +9,9 @@ from telegram.ext import (
     filters,
 )
 
-TOKEN = "7223088185:AAEg8ggwF2LrWBXRBU8LRgLi0hotbdZkCo0"
+import os
+
+TOKEN = os.getenv("TOKEN")
 
 DB_FILE = "messages.json"
 
