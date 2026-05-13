@@ -42,9 +42,6 @@ if len(text) < 4:
 # Игнорируем ссылки
 if "http" in text:
     return
-    # Игнорируем команды
-    if text.startswith("/"):
-        return
 
     # Сохраняем сообщение
     messages.append(text)
