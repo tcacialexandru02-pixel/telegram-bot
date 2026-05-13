@@ -44,8 +44,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     save_messages()
 
-    # Шанс 35% повторить старое сообщение
-    if random.randint(1, 100) <= 35:
+    # Шанс 20% повторить старое сообщение
+    if random.randint(1, 100) <= 20:
         random_message = random.choice(messages)
 
         await update.message.reply_text(random_message)
