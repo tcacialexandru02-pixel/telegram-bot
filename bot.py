@@ -35,14 +35,6 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     text = update.message.text
 
-    # Игнорируем слишком короткие сообщения
-if len(text) < 4:
-    return
-
-# Игнорируем ссылки
-if "http" in text:
-    return
-
     # Сохраняем сообщение
     messages.append(text)
 
